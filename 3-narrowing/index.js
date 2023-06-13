@@ -31,3 +31,40 @@ function operations(arr, operation) {
 }
 operations([1, 2, 3], 'sum');
 operations([1, 2, 3], 'multiply');
+// 3 - instance of
+class User {
+    constructor(name) {
+        this.name = name;
+    }
+}
+class SuperUser extends User {
+    constructor(name) {
+        super(name);
+    }
+}
+const jhon = new User("Jhon");
+const paulo = new SuperUser("paulo");
+console.log(jhon);
+console.log(paulo);
+function notificar(fn) {
+    // Mensagens do banco
+    const mensagens = [
+        "Olá Leandro",
+        "Boa tarde",
+        "Como vai",
+    ];
+    mensagens.forEach((item) => {
+        fn(item);
+    });
+}
+function fn1(msg) {
+    console.log(msg.toUpperCase());
+}
+function soma(n1, n2, n3, n4) {
+    return 0;
+}
+function fn2(msg) {
+    console.log(msg.split(" "));
+}
+notificar(fn1);
+notificar(fn2);
