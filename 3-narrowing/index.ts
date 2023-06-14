@@ -107,6 +107,21 @@ function fn2(msg:string){
 notificar(fn1);
 notificar(fn2);
 
+// 5- desafio
+
+type review = number | boolean
+
+function showUserReviwe(review:review){
+
+    if(review){
+
+        console.log("Você não avaliou o produto");
+        return
+    }
+
+    console.log("A nota que voce de foi "+review);
+    
+}
 
 
 
